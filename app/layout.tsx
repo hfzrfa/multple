@@ -7,11 +7,6 @@ import { usePathname, useRouter } from "next/navigation";
 import Transition from "@/components/Transition";
 import { ClerkProvider } from "@clerk/nextjs";
 
-// export const metadata: Metadata = {
-//     title: "Shaq Portofolio",
-//     description: "Just For Fun",
-// };
-
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -23,9 +18,9 @@ export default function RootLayout({
             <ClerkProvider>
                 <body>
                     <Layout>
-                        <AnimatePresence mode="wait">
+                        <AnimatePresence >
                             <motion.div key={pathName} className="h-full">
-                                <Transition />
+                                {/* <Transition /> */}
                                 {children}
                             </motion.div>
                         </AnimatePresence>

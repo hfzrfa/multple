@@ -21,7 +21,7 @@ const Services = () => {
                             animate="show"
                             className="h2 xl:mt-8"
                         >
-                            Layanan Guech<span className="text-accent">.</span>
+                            My Service<span className="text-accent">.</span>
                         </motion.h2>
                         <motion.p
                             variants={fadeIn("up", 0.4)}
@@ -29,10 +29,7 @@ const Services = () => {
                             animate="show"
                             className="mb-4 max-w-[400px] mx-auto lg:mx-0"
                         >
-                            Dengan layanan saya, Anda akan mendapatkan strategi
-                            branding yang memukau, desain web yang
-                            menginspirasi, pengembangan web yang terpercaya, dan
-                            optimasi SEO untuk kesuksesan digital Anda.
+                            With my services, you will get stunning networking, inspiring web design, reliable web development, and SEO optimization for your digital success.
                         </motion.p>
                     </div>
                     <motion.div
@@ -51,7 +48,7 @@ const Services = () => {
                 animate="show"
                 className="hidden w-full h-full max-w-[1100px] max-h-[400px] xl:flex absolute bottom-0 left-[30rem]"
             >
-                <Avatar image={AVATAR} width={1100} height={400}/>
+
             </motion.div>
             <Bulb />
         </div>

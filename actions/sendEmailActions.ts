@@ -16,7 +16,7 @@ export const sendEmailActions = async (
 	
     const { data } = await resend.emails.send({
         from: `${email} <onboarding@resend.dev>`,
-        to: ["mathqna.project@gmail.com"],
+        to: ["hragtrs17@gmail.com"],
         subject: subject,
         react: emailTemplate({
             authorName: name,

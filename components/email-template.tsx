@@ -45,7 +45,7 @@ export const emailTemplate = ({
                                 Shaq., Sulawesi Selatan, Indonesia 90242
                             </Text>
                             <Link
-                                href="https://t.me/DewaHoyoverse"
+                                href="https://t.me/hratya"
                                 style={reportLink}
                             >
                                 Report unsafe behavior to my telegram

@@ -6,8 +6,7 @@ import { fadeIn } from "@/variants";
 import Circles from "@/components/Circles";
 import Bulb from "@/components/Bulb";
 import { sendEmailActions } from "@/actions/sendEmailActions";
-import Avatar from "@/components/Avatar";
-import AVATAR from '@/public/avatar8.webp'
+
 
 const Contact = () => {
     return (
@@ -22,8 +21,8 @@ const Contact = () => {
                         animate="show"
                         className="h2 text-center mb-12"
                     >
-                        Mari Bangun{" "}
-                        <span className="text-accent">Koneksi.</span>
+                        Let's Build{" "}
+                        <span className="text-accent">Connections.</span>
                     </motion.h2>
                     <motion.form
                         action={sendEmailActions}
@@ -76,7 +75,7 @@ const Contact = () => {
                     animate="show"
                     className="hidden w-full h-full max-w-[650px] max-h-[550px] xl:flex absolute bottom-0 left-[2rem]"
                 >
-                    <Avatar image={AVATAR} width={650} height={550} />
+                    {/* <Avatar image={AVATAR} width={650} height={550} /> */}
                 </motion.div>
                 <Bulb />
             </div>

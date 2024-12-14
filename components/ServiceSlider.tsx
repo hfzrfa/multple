@@ -1,5 +1,9 @@
 "use client";
+
+import React, { useState } from "react";
+
 // icons
+import { FaNetworkWired } from "react-icons/fa";
 import {
     RxCrop,
     RxPencil2,
@@ -7,6 +11,7 @@ import {
     RxRocket,
     RxArrowTopRight,
 } from "react-icons/rx";
+import { SiSpringsecurity } from "react-icons/si";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,14 +20,18 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 import { FreeMode, Pagination } from "swiper/modules";
-import { SiSpringsecurity } from "react-icons/si";
 
 // data
 const serviceData = [
     {
-        icon: <RxCrop />,
-        title: "Branding",
-        description: "Strategi Branding yang Memukau.",
+        icon: <FaNetworkWired />,
+        title: "Network",
+        description: "Membuat internet yang baik.",
+    },
+    {
+        icon: <SiSpringsecurity />,
+        title: "Security",
+        description: "Keamanan Web yang Dapat Diandalkan.",
     },
     {
         icon: <RxPencil2 />,
@@ -33,11 +42,6 @@ const serviceData = [
         icon: <RxDesktop />,
         title: "Development",
         description: "Pengembangan Web yang Terpercaya.",
-    },
-    {
-        icon: <SiSpringsecurity />,
-        title: "Security",
-        description: "Keamanan Web yang Dapat Diandalkan.",
     },
     {
         icon: <RxRocket />,
@@ -73,7 +77,7 @@ const ServiceSlider = () => {
                             <div className="text-4xl text-accent mb-4">
                                 {item.icon}
                             </div>
-                            <div className="mb-8">
+                            <div className="mb-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div className="mb-2 text-lg">{item.title}</div>
                                 <p className="max-w-[350px] leading-normal">
                                     {item.description}

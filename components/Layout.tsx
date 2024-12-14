@@ -18,7 +18,7 @@ type ParamsProps = {
 const Layout = ({children} : ParamsProps) => {
   return (
 	  <div className={`page bg-site text-white bg-cover bg-no-repeat ${Jet.variable} font-JetBrains_Mono relative`}>
-		  <TopLeftImg />
+		  {/* <TopLeftImg /> */}
 		  <Nav />
 		  <Header />
 		  {children}

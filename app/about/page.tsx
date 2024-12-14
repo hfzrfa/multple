@@ -7,6 +7,7 @@ import AVATAR2 from '@/public/avatar3.webp'
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import CountUp from "react-countup";
+import ParticlesContainer from "@/components/ParticlesContainer";
 // icons
 import {
     FaAndroid,
@@ -15,6 +16,7 @@ import {
     FaJs,
     FaReact,
     FaFigma,
+    FaNetworkWired,
 } from "react-icons/fa";
 
 import {
@@ -72,67 +74,41 @@ const aboutData = [
                     <SiXampp />,
                 ],
             },
-        ],
-    },
-    {
-        title: "awards",
-        info: [
             {
-                title: "LKSN SMK Cyber Security - Medallion For Excellence #8",
-                stage: "2023",
-                icons: [],
+                title: "Networking",
+                icons: [
+                    <FaNetworkWired />,
+                ],
             },
         ],
     },
     {
-        title: "experience",
+        title: "Education",
         info: [
             {
-                title: "CO FOUNDER - RanchDeveloperx Agency",
-                stage: "2022 - until now",
+                title: "Telkom University",
+                stage: "2024",
                 icons: [],
-            },
-            {
-                title: "CO FOUNDER - RuangInvestasi",
-                stage: "2024 - until now",
             },
         ],
     },
+    // {
+    //     title: "experience",
+    //     info: [
+    //         {
+    //             title: "CO FOUNDER - RanchDeveloperx Agency",
+    //             stage: "2022 - until now",
+    //             icons: [],
+    //         },
+    //     ],
+    // },
     {
         title: "credentials",
         info: [
             {
-                title: "Rekayasa Perangkat Lunak - SMK TELKOM MAKASSAR",
-                stage: "2021 - 2024",
+                title: "Network Engineer",
+                stage: "2023 - 2024",
                 icons: [],
-            },
-            {
-                title: "Teknik Komputer - UNM",
-                stage: "2024 - until now",
-            },
-            {
-                title: "JavaScript Essentials - OpenEDG",
-                stage: "2024",
-            },
-            {
-                title: "Cloud Practitioner Essentials - dicoding",
-                stage: "2023-2026",
-            },
-            {
-                title: "JavaScriptAlgorithms - freeCodeCamp",
-                stage: "2023",
-            },
-            {
-                title: "Responsive Web Design - freeCodeCamp",
-                stage: "2023",
-            },
-            {
-                title: "CSS - HackerRank",
-                stage: "2023",
-            },
-            {
-                title: "Laravel Dasar - CODEPOLITAN",
-                stage: "2023 - 2026",
             },
         ],
     },
@@ -162,6 +138,10 @@ const About = () => {
 
             </motion.div>
             <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+
+            <div className="">
+                <ParticlesContainer/>
+            </div>
                 {/* text */}
                 <div className="flex-1 flex flex-col justify-center">
                     <motion.h2
@@ -170,8 +150,8 @@ const About = () => {
                         animate="show"
                         className="h2"
                     >
-                        Cerita <span className="text-accent">Menarik</span>,
-                        Desain Teknologi Mutakhir.
+                        About <span className="text-accent">Me</span>,
+
                     </motion.h2>
                     <motion.p
                         variants={fadeIn("right", 0.4)}
@@ -179,10 +159,7 @@ const About = () => {
                         animate="show"
                         className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
                     >
-                        Pada tahun 2023 saya mulai menjadi freelance sebagai
-                        Backend Developer. Sejak saat itulah saya bekerja untuk
-                        agensi, kerja remote backend, dan juga data analis
-                        cryptocurrency.
+                        In 2021, I became interested in the IT world. I started learning programming and design. I learned many things, from frontend, backend, to UI/UX design. I also learned about computer networks and information security. I hope to become an expert in this field.
                     </motion.p>
                     {/* count */}
                     <motion.div

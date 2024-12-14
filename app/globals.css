@@ -49,3 +49,9 @@
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
 }
+
+
+::selection {
+  background-color: red;
+  color: white; /* Optional: to change the text color */
+}
