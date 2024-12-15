@@ -1,9 +1,6 @@
 "use client";
-
 import Circles from "@/components/Circles";
 import { fadeIn } from "@/variants";
-import AVATAR1 from '@/public/avatar2.webp'
-import AVATAR2 from '@/public/avatar3.webp'
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import CountUp from "react-countup";
@@ -33,7 +30,7 @@ import {
     SiDart,
     SiFlutter,
 } from "react-icons/si";
-import Avatar from "@/components/Avatar";
+
 
 //  data
 const aboutData = [
@@ -92,16 +89,6 @@ const aboutData = [
             },
         ],
     },
-    // {
-    //     title: "experience",
-    //     info: [
-    //         {
-    //             title: "CO FOUNDER - RanchDeveloperx Agency",
-    //             stage: "2022 - until now",
-    //             icons: [],
-    //         },
-    //     ],
-    // },
     {
         title: "credentials",
         info: [

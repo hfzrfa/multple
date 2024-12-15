@@ -3,10 +3,8 @@ import Bulb from "@/components/Bulb";
 import Circles from "@/components/Circles";
 import ServiceSlider from "@/components/ServiceSlider";
 import { fadeIn } from "@/variants";
-import AVATAR from '@/public/avatar4.webp'
 import { motion } from "framer-motion";
 import React from "react";
-import Avatar from "@/components/Avatar";
 
 const Services = () => {
     return (

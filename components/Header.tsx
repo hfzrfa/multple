@@ -1,7 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-import LOGO from '@/public/logo.svg'
 import Socials from './Socials'
 
 const Header = () => {
