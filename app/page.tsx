@@ -1,13 +1,15 @@
 "use client";
+import { auth } from '@clerk/nextjs/server'
 import Image from "next/image";
 import ProjectsBtn from "@/components/ProjectsBtn";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import ParticlesContainer from "@/components/ParticlesContainer";
 import PP from "@/public/1.png";
+import { headers } from "next/headers";
 
 export default function Home() {
-    return (
+    return ( 
         <div className="bg-primary/60 h-full">
             <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
                 <div className="text-center flex flex-col justify-center xl:pt-30 xl:text-left h-full container mx-auto">
@@ -52,7 +54,7 @@ export default function Home() {
                     initial="hidden"
                     animate="show"
                     transition={{ duration: 1, ease: "easeInOut" }}
-                    className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[10%]"
+                    className="w-full h-full itmes-center max-w-[800px] max-h-[880px] absolute -bottom-32 lg:bottom-0 lg:right-[10%]"
                 >
                     <Image src={PP} alt="Avatar" width={550} height={600} priority draggable="false"/>
                 </motion.div>

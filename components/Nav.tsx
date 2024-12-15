@@ -14,14 +14,14 @@ import {
 
 // nav data
 export const navData = [
-    { name: "home", path: "/", icon: <HiHome /> },
-    { name: "about", path: "/about", icon: <HiUser /> },
-    { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-    { name: "work", path: "/work", icon: <HiViewColumns /> },
+    { name: "HOME", path: "/", icon: <HiHome /> },
+    { name: "ABOUT", path: "/about", icon: <HiUser /> },
+    { name: "SERVICES", path: "/services", icon: <HiRectangleGroup /> },
+    { name: "WORK", path: "/work", icon: <HiViewColumns /> },
     {
-        name: "contact",
+        name: "CONTACT",
         path: "/contact",
-        icon: <HiEnvelope />,
+        icon: <HiEnvelope />, 
     },
 
 ];

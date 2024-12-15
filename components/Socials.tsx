@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import {  RiExchangeDollarLine, RiGithubLine, RiInstagramLine, RiLinkedinLine, RiTelegramLine, RiYoutubeLine } from 'react-icons/ri'
-import UserPage from './UserPage';
+// import UserPage from './UserPage';
 
 const Socials = () => {
 
@@ -40,7 +40,7 @@ const Socials = () => {
           >
               <RiLinkedinLine />
           </Link>
-          <UserPage />
+          {/* <UserPage /> */}
       </div>
   );
 }

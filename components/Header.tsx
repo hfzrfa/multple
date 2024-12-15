@@ -10,18 +10,7 @@ const Header = () => {
 		  <div className='container mx-auto'>
 			  <div className='flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8'>
 				<h1></h1>
-				  {/* logo */}
-				  {/* <Link href="/">
-					  <Image
-						  src={LOGO}
-						  alt={LOGO}
-						  width={250}
-						  height={48}
-						  priority={true}
-					  />
-				  </Link> */}
-				  {/* sosial */}
-				  <Socials />
+				<Socials />
 			</div>
 		  </div>
 	</header>

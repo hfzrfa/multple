@@ -42,7 +42,7 @@ export const emailTemplate = ({
                     <Section>
                         <Row>
                             <Text style={footer}>
-                                Shaq., Sulawesi Selatan, Indonesia 90242
+                                Hafiz, Kepulauan Riau, Indonesia 29152
                             </Text>
                             <Link
                                 href="https://t.me/hratya"

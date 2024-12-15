@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 import Transition from "@/components/Transition";
 import { ClerkProvider } from "@clerk/nextjs";
+import { auth } from '@clerk/nextjs/server'
 
 export default function RootLayout({
     children,
@@ -20,7 +21,6 @@ export default function RootLayout({
                     <Layout>
                         <AnimatePresence >
                             <motion.div key={pathName} className="h-full">
-                                {/* <Transition /> */}
                                 {children}
                             </motion.div>
                         </AnimatePresence>
@@ -30,3 +30,5 @@ export default function RootLayout({
         </html>
     );
 }
+
+{/* <Transition /> */}
